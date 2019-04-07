@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jg7-s2-tAW">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="zaK-lg-3Ob">
+            <objects>
+                <viewController title="Home" id="Agk-oy-0JH" customClass="Tela1ViewController" customModule="padraoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b1R-WO-09o">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVJ-t7-tOZ">
+                                <rect key="frame" x="15" y="10" width="290" height="40"/>
+                                <color key="backgroundColor" red="0.74552905560000005" green="0.13377401229999999" blue="0.2181786597" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CLW-g0-vVy"/>
+                                </constraints>
+                                <state key="normal" title="Navega">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cOM-nf-Bd6" kind="show" id="bRD-Gz-nWZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PVJ-t7-tOZ" firstAttribute="leading" secondItem="fh0-rl-vc8" secondAttribute="leading" constant="15" id="SwI-9I-43K"/>
+                            <constraint firstItem="PVJ-t7-tOZ" firstAttribute="top" secondItem="fh0-rl-vc8" secondAttribute="top" constant="10" id="h3K-1V-lOy"/>
+                            <constraint firstItem="fh0-rl-vc8" firstAttribute="trailing" secondItem="PVJ-t7-tOZ" secondAttribute="trailing" constant="15" id="kcA-vf-ctk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fh0-rl-vc8"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="Xbe-qZ-dcb"/>
+                    <connections>
+                        <outlet property="btnNavegacao" destination="PVJ-t7-tOZ" id="cpR-Ar-qqL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0zy-Kx-Jzz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="698" y="128"/>
+        </scene>
+        <!--Tela2 View Controller-->
+        <scene sceneID="wWv-sG-WOi">
+            <objects>
+                <viewController id="cOM-nf-Bd6" customClass="Tela2ViewController" customModule="padraoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0RR-Wc-G8O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tela 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJe-Ae-LM1">
+                                <rect key="frame" x="137" y="241.5" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CJe-Ae-LM1" firstAttribute="centerX" secondItem="0RR-Wc-G8O" secondAttribute="centerX" id="GCW-RY-lxf"/>
+                            <constraint firstItem="CJe-Ae-LM1" firstAttribute="centerY" secondItem="0RR-Wc-G8O" secondAttribute="centerY" id="JA6-Mj-8S3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pen-ZI-v8s"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iMk-Yr-0BY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1449" y="128"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="yOn-PV-Awx">
+            <objects>
+                <navigationController title="Home" automaticallyAdjustsScrollViewInsets="NO" id="jg7-s2-tAW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="TFA-MU-44X">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.17040613290000001" green="0.48931276800000001" blue="0.57741802929999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Agk-oy-0JH" kind="relationship" relationship="rootViewController" id="jFS-n8-uK7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9hl-TL-m5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-69.375" y="127.8169014084507"/>
+        </scene>
+    </scenes>
+</document>
